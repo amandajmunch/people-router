@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "v7.5.0"
+  },
   "dependencies": {
     "express": "^4.15.2",
     "mustache": "^2.3.0",
