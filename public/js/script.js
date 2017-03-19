@@ -13,9 +13,8 @@ $('.new-people-form').on('submit', e => {
    favoriteCity : favoriteCity
   };
 
-
  $.ajax({
-    url: '/api/people',
+    url: '/api/people/',
     type: 'POST',
     // this will be the req.body
     data: newPersonData,
@@ -56,6 +55,23 @@ $.ajax({
 
   });
 });
+
+ $('.delete-person1').click(function () {
+        id = $('.person-id').attr('data-id')
+        if (confirm('Are you sure you want to delete this person?')) {
+            $.ajax({
+                url: '/api/people/' + id ,
+                  type: 'DELETE'
+                , success: function (data) {
+                  // console.log(data);
+                    window.location.replace('/people');
+                }
+                , error: function (error) {
+                    console.log('error! ', error);
+                }
+            });
+        };
+    });
 
 
 

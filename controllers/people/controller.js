@@ -4,10 +4,8 @@ const controller = {};
 
 controller.index = (req, res) => {
   People
-  // referencing the models functions
     .findAll()
     .then((data) => {
-      // rendering a page
       res.render('people/index', {people: data});
     })
     .catch(err => console.log('ERROR:', err));
@@ -23,7 +21,6 @@ controller.show = (req, res) => {
     .catch(err => console.log('ERROR:', err));
 };
 
-// your work here
 
 controller.new = (req, res) => {
   res.render('people/new');

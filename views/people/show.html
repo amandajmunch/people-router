@@ -5,18 +5,23 @@
     <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title></title>
   </head>
-  <body>
-    <a href="/people/">Back to all People</a>
-    <hr />
+  <body class='person-id' data-id='{{id}}'>
+    <div class="show">
+      <img src="/images/spotify-logo.png" class = "logoPic">
+      <br>
+      <a href="/people/">Back to all People</a>
+      <hr />
 
-    <h5>Name: {{ name }}</h5>
+      <h4>Name: {{ name }}</h4>
+      <h4>Favorite City: {{ favoritecity}}</h4>
+      <hr />
 
-    <p>Favorite City: {{ favoritecity}}</p>
-    <hr />
-
-    <a href="/people/{{ id }}/edit">Edit this Person</a>
-    <button class="delete-person1">DELETE THIS PERSON? ARE YOU SURE?</button>
+      <!-- <a href="/people/{{ id }}/edit">Edit this Person</a> -->
+      <button onclick="window.location.href='/people/{{ id }}/edit'">Edit this Person</button>
+      <button class="delete-person1">Delete Person</button>
+    </div>
   </body>
 </html>

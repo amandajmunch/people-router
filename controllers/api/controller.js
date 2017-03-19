@@ -6,7 +6,6 @@ controller.index = (req, res) => {
   People
     .findAll()
     .then((data) => {
-      // sending back json data
       res.json(data);
     })
     .catch(err => console.log('ERROR:', err));
@@ -22,8 +21,6 @@ controller.show = (req, res) => {
     .catch(err => console.log('ERROR:', err));
 };
 
-// your work here
-
 controller.create = (req,res) => {
 const name = req.body.name,
       favoriteCity = req.body.favoriteCity;
@@ -36,7 +33,6 @@ People
 };
 
 controller.update = (req,res) => {
-  // this becomes the request body
   const name = req.body.name,
       favoriteCity = req.body.favoriteCity,
       id = req.params.id;

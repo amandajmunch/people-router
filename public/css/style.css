@@ -1,6 +1,57 @@
 .index {
+  margin-top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.peopleView {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.edit {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.new {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoPic{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /*justify-content: center;*/
+}
+
+
+.delete-person1 {
+  display: flex;
+  flex-direction: column;
+  width: 14vh;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
 }

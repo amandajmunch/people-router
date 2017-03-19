@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title></title>
   </head>
   <body>
-    <h3>Person!</h3>
+    <div class="peopleView">
+      <img src="/images/spotify-logo.png" class = "logoPic">
+      <h3>Here is a list of people!</h3>
+      <a href="/people/new">Create new Person</a>
+      {{ #people }}
+          <h4>Name: {{ name }}</h4>
+          <h4>Favorite City: {{ favoritecity }} </h4>
+         <a href="/people/{{ id }}">Click here to learn more about {{ name }}</a>
+      {{ /people }}
 
-    {{ #people }}
-      <a href="/people/{{ id }}">Click here to learn more about {{ name }}</a>
-        <h5>Name:{{ name }}</h5>
-        <p>Favorite City: {{ favoritecity }} </p>
-
-    {{ /people }}
-
-  <a href="/people/new">Create new Person</a>
+    </div>
   </body>
 </html>

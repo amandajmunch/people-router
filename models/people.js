@@ -16,7 +16,7 @@ People.findById = (id) => {
 
 People.create = (name, favoriteCity) => {
   return db.one(
-    'INSERT INTO people (name, favoriteCity) VALUES ($1, $2, $3, $4) returning id',
+    'INSERT INTO people (name, favoriteCity) VALUES ($1, $2) returning id',
     [name, favoriteCity]
   );
 };

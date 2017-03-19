@@ -6,23 +6,30 @@
      <link rel="stylesheet" href="/css/style.css">
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-<form class="edit-people-form">
-    <h5>Edit {{ name }}</h5>
-<!--
-    <label>Name: </label>
-    <input class="poke-name-input" value = {{name}} />
-    <br /> -->
+    <div class="edit">
+     <img src="/images/spotify-logo.png" class = "logoPic">
+        <form class="edit-people-form">
+            <h4>Edit {{ name }}'s favorite city</h4>
+            <a href="/people/{{ id }}">Back to {{ name }}</a>
+            <br>
+        <!--
+            <label>Name: </label>
+            <input class="poke-name-input" value = {{name}} />
+            <br /> -->
+            <br />
+            <label>Favorite City: </label>
+            <textarea class="people-favoriteCity-input">{{ favoriteCity}}</textarea>
+            <br />
 
-    <label>Favorite City: </label>
-    <textarea class="people-favoriteCity-input">{{ favoriteCity}}</textarea>
-    <br />
 
+            <input class ="people-id-input" value = {{id}} type="hidden">
 
-    <input class ="people-id-input" value = {{id}} type="hidden">
+            <button type ="submit">Submit</button>
+          </form>
 
-    <button type ="submit">Submit</button>
-  </form>
+      </div>
 </body>
 </html>
