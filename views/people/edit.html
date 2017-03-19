@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+</head>
+<body>
+<form class="edit-people-form">
+    <h5>Edit {{ name }}</h5>
+<!--
+    <label>Name: </label>
+    <input class="poke-name-input" value = {{name}} />
+    <br /> -->
+
+    <label>Favorite City: </label>
+    <textarea class="people-favoriteCity-input">{{ favoriteCity}}</textarea>
+    <br />
+
+
+    <input class ="people-id-input" value = {{id}} type="hidden">
+
+    <button type ="submit">Submit</button>
+  </form>
+</body>
+</html>

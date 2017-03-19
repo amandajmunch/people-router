@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <h3>Person!</h3>
+
+    {{ #people }}
+      <a href="/people/{{ id }}">Click here to learn more about {{ name }}</a>
+        <h5>Name:{{ name }}</h5>
+        <p>Favorite City: {{ favoritecity }} </p>
+
+    {{ /people }}
+
+  <a href="/people/new">Create new Person</a>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <a href="/people/">Back to all People</a>
+    <hr />
+
+    <h5>Name: {{ name }}</h5>
+
+    <p>Favorite City: {{ favoritecity}}</p>
+    <hr />
+
+    <a href="/people/{{ id }}/edit">Edit this Person</a>
+    <button class="delete-person1">DELETE THIS PERSON? ARE YOU SURE?</button>
+  </body>
+</html>
